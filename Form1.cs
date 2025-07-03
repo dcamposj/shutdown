@@ -11,7 +11,8 @@ namespace shutdownsharp
 
         private void BtnRun_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(txtHours.Text, out double hours) && hours > 0)
+            string input = txtHours.Text.Replace(',', '.');
+            if (double.TryParse(input, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out double hours) && hours > 0)
             {
                 // Create the modified PowerShell script
                 string script =

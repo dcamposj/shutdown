@@ -18,6 +18,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtHours = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
+            this.Icon = new System.Drawing.Icon("img/icon.ico");
             this.SuspendLayout();
             // 
             // label1
@@ -27,7 +28,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(158, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Digite el tiempo deseado (en horas):";
+            this.label1.Text = "Digite el tiempo deseado (en horas): ";
             // 
             // txtHours
             // 
@@ -43,7 +44,7 @@
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(75, 23);
             this.btnRun.TabIndex = 2;
-            this.btnRun.Text = "Run Script";
+            this.btnRun.Text = "Aceptar";
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.BtnRun_Click);
             // 
@@ -60,7 +61,7 @@
             this.MinimizeBox = false;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Shutdown Timer Launcher";
+            this.Text = "Apagado automático";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
